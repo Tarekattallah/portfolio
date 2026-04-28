@@ -261,5 +261,5 @@ bt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 })();
 
 // ═══ RESUME DOWNLOAD ═══
-document.querySelectorAll('#dlResume1,#dlResume2').forEach(b=>{b.addEventListener('click',e=>{e.preventDefault();alert('ضع ملف الـ CV واستبدل href بمسار الملف.');})});
+document.querySelectorAll('#dlResume1,#dlResume2').forEach(b=>{b.addEventListener('click',e=>{e.preventDefault();alert('https://drive.google.com/file/d/1zLHtBq9YdjaXhC6JfGC5tlLZmAxcZBPV/view?usp=drive_link');})});
 
