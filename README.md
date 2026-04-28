@@ -12,7 +12,7 @@
 
 <br/>
 
-![Portfolio Preview](images/preview.png)
+![Portfolio Preview]([images/preview.png](https://tarekattallah.github.io/portfolio/))
 
 </div>
 
