@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AL-Tarek Attallah – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<div id="loader"><div class="loader-ring"></div></div>
+
+<!-- Mobile Menu Toggle -->
+<button id="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+
+<!-- SIDEBAR -->
+<aside id="sidebar">
+  <div class="sb-avatar">
+    <!-- ── IMAGE NAME: sidebar-avatar-photo ── Uncomment and set src to your photo -->
+    <img id="img-sidebar-avatar" src="./images/profile.png" alt="Tarek Attallah"> 
+   
+  </div>
+  <div class="sb-brand">Portfolio</div>
+  <div class="sb-sub">AL-Tarek Attallah</div>
+  <nav class="sb-nav">
+    <a data-page="home" class="active">Home</a>
+    <a data-page="about-section">About</a>
+    <a data-page="services-page">Services</a>
+    <a data-page="portfolios-page">Projects</a>
+    <a data-page="resume-section">Resume</a>
+    <a data-page="blog-page">Blog</a>
+    <a data-page="contact-page">Contact</a>
+  </nav>
+  <div class="sb-socials">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <!-- <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a> -->
+    <a href="https://github.com/Tarekattallah" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://wa.me/201061258009" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://t.me/tarekattallah" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://snapchat.com/add/tarek13122000" target="_blank" title="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+  </div>
+</aside>
+
+<main id="main">
+
+  <!-- ══════════ HOME PAGE ══════════ -->
+  <div id="home" class="page active">
+
+    <!-- HERO -->
+    <div id="hero">
+      <canvas id="code-canvas"></canvas>
+      <canvas id="particle-canvas"></canvas>
+
+      <!--
+        ╔══════════════════════════════════════════════════════╗
+        ║  HERO PERSON IMAGE – change src to update anytime   ║
+        ║  Example: src="images/me.png"                       ║
+        ╚══════════════════════════════════════════════════════╝
+      -->
+      <img
+        id="hero-person-img"
+        src=""
+        alt=""
+      />
+
+      <div class="hero-content">
+        <h1>AL-Tarek Attallah</h1>
+        <div class="hero-typed">I am a <span id="typed-text"></span><span class="cursor">|</span></div>
+        <!-- Static professional Hire Me button -->
+        <div class="btn-hire-wrap" id="hireWrap">
+          <button class="btn-hire" id="hireBtn" onclick="goPage('contact-page')"><i class="fas fa-paper-plane" style="font-size:.7rem"></i> Hire Me</button>
+        </div>
+        <span class="hire-hint" style="display:none"></span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about-section">
+      <div class="about-wrap">
+        <div class="about-photo reveal-left">
+          <!-- ── IMAGE NAME: about-photo ── Replace src with your photo path -->
+          <img src="./images/Gemini_Generated_Image_3cu7ag3cu7ag3cu7.png" alt="Tarek Attallah">
+          <div class="about-photo-overlay"></div>
+          <div class="about-photo-badge"><i class="fas fa-circle"></i> Available for Hire</div>
+        </div>
+        <div class="about-text-col reveal-right">
+          <span class="sec-label">ABOUT</span>
+          <h2 class="sec-title">About Me</h2>
+          <p class="about-body">I’m a full-stack developer who builds simple and useful web applications using React and Node.js.
+I enjoy learning by practice and improving my skills step by step. Recently, I’ve been focusing on DevOps and web security.
+I’m currently working on real projects to grow and become a better developer.</p>
+          <div class="about-info" style="margin-top:.8rem">
+            <div><b>Name:</b> Al-Tarek Attallah</div>
+            <div><b>Role:</b> Full Stack developer</div>
+            <div><b>Email:</b> tarekattallah00@gmail.com</div>
+            <div><b>Location:</b> Egypt</div>
+            <div><b>Status:</b> <span style="color:green">Open to Work</span></div>
+          </div>
+          <a href="#" class="btn-dark" id="dlResume1" style="margin-top:1rem"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills-section" style="background:#f5f6fa">
+      <div class="skills-wrap">
+        <div class="skills-left reveal-left">
+          <span class="sec-label">MY SKILL</span>
+          <h2 class="sec-title">Technical Skills</h2>
+          <p class="skills-desc">My stack spans frontend, backend, and DevOps — focused on building and shipping real-world applications.</p>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#e34c26">󠁡<i class="fab fa-html5"></i></div>
+              <div class="skill-card-name">HTML / CSS</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-blue"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#f7df1e"><i class="fab fa-js"></i></div>
+              <div class="skill-card-name">JavaScript</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-navy"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#61dafb"><i class="fab fa-react"></i></div>
+              <div class="skill-card-name">React.js</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-blue"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#3c873a"><i class="fab fa-node-js"></i></div>
+              <div class="skill-card-name">Node.js</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-green"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#4db33d"><i class="fas fa-database"></i></div>
+              <div class="skill-card-name">MongoDB</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-green"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#f05032"><i class="fab fa-git-alt"></i></div>
+              <div class="skill-card-name">Git & GitHub</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-red"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#0db7ed"><i class="fab fa-docker"></i></div>
+              <div class="skill-card-name">Docker</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-teal"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#fcc624"><i class="fab fa-linux"></i></div>
+              <div class="skill-card-name">Linux</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-orange"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon" style="color:#7c3aed"><i class="fas fa-infinity"></i></div>
+              <div class="skill-card-name">DevOps</div>
+              <div class="skill-card-level"><span class="skill-card-dot dot-purple"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-photo reveal-right">
+          <!-- ── IMAGE NAME: skills-photo ── Replace src with your image path -->
+          <img src="./images/Professional graphic representing technical skills, showing icons and symbols for programming languages, coding, software development, databases, cloud computing, AI, cybersecurity, data analysis, with modern tech .jpg" alt="Coding Skills">
+          <div class="skills-photo-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOME SERVICES -->
+    <div class="section">
+      <div class="reveal" style="text-align:center">
+        <span class="sec-label sec-label-center">SERVICES</span>
+        <h2 class="sec-title sec-title-center">Services I Provide</h2>
+      </div>
+      <div class="home-srv-grid">
+        <div class="home-srv-card reveal" onclick="goServiceDetail(0)">
+          <div class="home-srv-img">
+            <!-- ── IMAGE NAME: srv-card-1 ── <img src="srv-card-1.jpg" alt="Web Development"> -->
+            <img src="./images/Front-End Development wallpaper featuring React, HTML, CSS, and JavaScript logos and code elements, modern tech aesthetic with vibrant colors, programming theme, developer workspace vibe.jpg" alt="Front-End Development (React, HTML, CSS, JavaScript)" loading="lazy">
+          </div>
+          <div class="home-srv-overlay"><div class="home-srv-name">Front-End Development (React, HTML, CSS, JavaScript)</div></div>
+        </div>
+        <div class="home-srv-card reveal" onclick="goServiceDetail(1)">
+          <div class="home-srv-img">
+            <!-- ── IMAGE NAME: srv-card-2 ── <img src="srv-card-2.jpg" alt="REST APIs"> -->
+            <img src="./images/Back-end development illustration featuring Node.js and APIs, showing server architecture, code snippets, API endpoints, database connections, Node.js logo, RESTful services, and technical programming elements.jpg" alt="Back-End Development (Node.js, APIs)" loading="lazy">
+          </div>
+          <div class="home-srv-overlay"><div class="home-srv-name">Back-End Development (Node.js, APIs)</div></div>
+        </div>
+        <div class="home-srv-card reveal" onclick="goServiceDetail(2)">
+          <div class="home-srv-img">
+            <!-- ── IMAGE NAME: srv-card-3 ── <img src="srv-card-3.jpg" alt="Responsive Design"> -->
+            <img src="./images/Basic DevOps and Deployment illustration featuring CI_CD pipeline, Docker containers, cloud deployment, automation tools, version control, server infrastructure, deployment process, continuous integration and deliv.jpg" alt="Basic DevOps & Deployment" loading="lazy">
+          </div>
+          <div class="home-srv-overlay"><div class="home-srv-name">Basic DevOps & Deployment</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUME -->
+    <div id="resume-section" class="section alt">
+      <div class="reveal" style="text-align:center">
+        <span class="sec-label sec-label-center">RESUME</span>
+        <h2 class="sec-title sec-title-center">Job and Educational Experiences</h2>
+      </div>
+      <div class="res-wrap">
+        <div class="reveal-left">
+          <div class="res-col-h"><i class="fas fa-graduation-cap"></i> Education</div>
+          <div class="res-divider"></div>
+          <div class="timeline">
+            <div class="tl-item"><div class="tl-date">Jan 2020 – Present</div><div class="tl-title">Bachelor’s Degree in Science</div><div class="tl-sub">Faculty of Science, Banha University</div><div class="tl-desc"></div></div>
+            <div class="tl-item"><div class="tl-date">Jan 2017 – Jun 2020</div><div class="tl-title">Diploma in Biochemistry</div><div class="tl-sub">Faculty of Science, Banha University</div><div class="tl-desc"></div></div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="res-col-h"><i class="fas fa-briefcase"></i> Job Experience</div>
+          <div class="res-divider"></div>
+          <div class="timeline">
+            <div class="tl-item"><div class="tl-date">2026 – Present</div><div class="tl-title">Junior Full Stack Developer</div><div class="tl-sub">Freelance / Personal Projects</div><div class="tl-desc">Building full-stack web applications using React, Node.js, Express, and MongoDB.</div></div>
+            <div class="tl-item"><div class="tl-date">2024 - 2025</div><div class="tl-title">Quality Control Specialist</div><div class="tl-sub">Ceramica Royall, Obur</div><div class="tl-desc">Conducted rigorous quality checks on 100+ units per shift, ensuring 100% compliance with safety
+standards. Analyzed production data to identify defects, applying a logical troubleshooting approach similar to software
+debugging.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="res-dl-wrap reveal">
+        <a href="#" class="btn-dark" id="dlResume2"><i class="fas fa-file-download"></i> Download Resume (PDF)</a>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div id="stats-sec">
+      <div class="stats-grid">
+        <div class="reveal" style="text-align:center"><div class="stat-num" data-count="1">0</div><div class="stat-lbl">Years of Experience</div></div>
+        <div class="reveal" style="text-align:center"><div class="stat-num" data-count="10">0</div><div class="stat-lbl">Satisfied Clients</div></div>
+        <div class="reveal" style="text-align:center"><div class="stat-num" data-count="15">0</div><div class="stat-lbl">Projects Completed</div></div>
+        <div class="reveal" style="text-align:center"><div class="stat-num" data-count="2">0</div><div class="stat-lbl">Countries</div></div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolios-section" class="section">
+      <div class="reveal" style="text-align:center">
+        <span class="sec-label sec-label-center">PORTFOLIOS</span>
+        <h2 class="sec-title sec-title-center">Awesome Projects</h2>
+      </div>
+      <div class="port-filter reveal">
+        <button class="f-btn active" data-filter="all">All</button>
+        <button class="f-btn" data-filter="web">Web Development</button>
+        <button class="f-btn" data-filter="api">API</button>
+        <button class="f-btn" data-filter="misc">MISC</button>
+      </div>
+      <div class="port-grid">
+        <div class="port-card reveal" data-cat="web" onclick="goPortDetail(0)">
+          <div class="port-img">
+            <!-- ── IMAGE NAME: port-thumb-0 ── <img src="port-thumb-0.jpg" alt="MediBook"> -->
+            <img src="./images/MediBook Medical Booking System illustration featuring healthcare appointment scheduling, doctor booking interface, medical calendar, patient management, hospital system, healthcare app, medical appointments, digit.jpg" alt="MediBook" loading="lazy">
+            <div class="port-ov"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="port-info"><div class="port-title">MediBook – Medical Booking System</div></div>
+        </div>
+        <div class="port-card reveal" data-cat="web" onclick="goPortDetail(1)">
+          <div class="port-img">
+            <!-- ── IMAGE NAME: port-thumb-1 ── <img src="port-thumb-1.jpg" alt="Portfolio"> -->
+            <img src="./images/Personal Portfolio Website illustration featuring web developer portfolio, creative portfolio design, website mockup, personal brand showcase, skills section, projects gallery, about me page, contact form, responsi.jpg" alt="Portfolio" loading="lazy">
+            <div class="port-ov"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="port-info"><div class="port-title">Personal Portfolio Website</div></div>
+        </div>
+        <div class="port-card reveal" data-cat="web" onclick="goPortDetail(2)">
+          <div class="port-img">
+            <!-- ── IMAGE NAME: port-thumb-2 ── <img src="port-thumb-2.jpg" alt="Task Manager"> -->
+            <img src="./images/Task Manager App with CRUD operations illustration featuring to-do list interface, create read update delete functions, task management dashboard, productivity app, checklist interface, task organization system, mo.jpg" alt="Task Manager" loading="lazy">
+            <div class="port-ov"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="port-info"><div class="port-title">Task Manager App (CRUD)</div></div>
+        </div>
+        <div class="port-card reveal" data-cat="api" onclick="goPortDetail(3)">
+          <div class="port-img">
+            <!-- ── IMAGE NAME: port-thumb-3 ── <img src="port-thumb-3.jpg" alt="REST API"> -->
+            <img src="./images/REST API Project illustration featuring RESTful API architecture, HTTP methods GET POST PUT DELETE, API endpoints, JSON data exchange, API documentation, server client communication, API integration, web services, .jpg" alt="REST API" loading="lazy">
+            <div class="port-ov"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="port-info"><div class="port-title">REST API Project</div></div>
+        </div>
+        <div class="port-card reveal" data-cat="misc" onclick="goPortDetail(4)">
+          <div class="port-img">
+            <!-- ── IMAGE NAME: port-thumb-4 ── <img src="port-thumb-4.jpg" alt="Game"> -->
+            <img src="./images/Scratch programming game interface from CS50 project, showing colorful block-based coding environment with sprite characters, stage area with game elements, code blocks on the left side, and a playful education (1).jpg" alt="Game" loading="lazy">
+            <div class="port-ov"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="port-info"><div class="port-title">Scratch Game (CS50 Project)</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS CAROUSEL -->
+    <div class="section alt" id="testimonials-section" style="overflow:hidden">
+      <div class="reveal" style="text-align:center">
+        <span class="sec-label sec-label-center">TESTIMONIAL</span>
+        <h2 class="sec-title sec-title-center">What Clients Say</h2>
+      </div>
+      <div class="test-carousel-wrap">
+<div class="test-carousel-wrap">
+  <div class="test-carousel-track" id="testTrack">
+
+    <div class="test-card">
+      <div class="test-name">Ali Mahmoud</div>
+      <div class="test-role">E-commerce Owner</div>
+      <p class="test-text">
+        Tarek delivered an outstanding website for our business. The performance, design, and code quality were excellent.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">Hassan Ibrahim</div>
+      <div class="test-role">Project Manager</div>
+      <p class="test-text">
+        Very professional experience. Tarek understood the requirements quickly and delivered everything with great accuracy.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">Mona Adel</div>
+      <div class="test-role">Marketing Specialist</div>
+      <p class="test-text">
+        The website is fast, responsive, and user-friendly. Tarek significantly improved our overall user experience.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">Karim Nabil</div>
+      <div class="test-role">Startup Founder</div>
+      <p class="test-text">
+        I've worked with Tarek on multiple projects. He is reliable, creative, and always delivers on time.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">Yara Samir</div>
+      <div class="test-role">UI/UX Designer</div>
+      <p class="test-text">
+        Great collaboration. Tarek transformed the design into a pixel-perfect and highly responsive website.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <!-- Clones for infinite loop -->
+
+    <div class="test-card">
+      <div class="test-name">Ali Mahmoud</div>
+      <div class="test-role">E-commerce Owner</div>
+      <p class="test-text">
+        Tarek delivered an outstanding website for our business. The performance, design, and code quality were excellent.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">Hassan Ibrahim</div>
+      <div class="test-role">Project Manager</div>
+      <p class="test-text">
+        Very professional experience. Tarek understood the requirements quickly and delivered everything with great accuracy.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+    <div class="test-card">
+      <div class="test-name">Mona Adel</div>
+      <div class="test-role">Marketing Specialist</div>
+      <p class="test-text">
+        The website is fast, responsive, and user-friendly. Tarek significantly improved our overall user experience.
+      </p>
+      <div class="test-quote-icon"><i class="fas fa-quote-right"></i></div>
+    </div>
+
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- BLOG -->
+    <div id="blog-section" class="section">
+      <div class="reveal" style="text-align:center">
+        <span class="sec-label sec-label-center">BLOG POSTS</span>
+        <h2 class="sec-title sec-title-center">Latest Articles</h2>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card reveal" onclick="goBlogDetail(0)" style="cursor:pointer">
+          <div class="blog-img">
+            <!-- ── IMAGE NAME: blog-thumb-0 ── <img src="blog-thumb-0.jpg" alt="Docker"> -->
+            <img src="./images/Blog header image for _Getting Started with Docker for Developers_ - featuring Docker containers, whale logo, developer workspace with code, modern tech aesthetic, blue and white color scheme, professional and clea.jpg" alt="Docker" loading="lazy">
+          </div>
+          <div class="blog-info"><div class="blog-meta"><span><i class="fas fa-user"></i> by Tarek</span><span><i class="fas fa-calendar"></i> Apr 10, 2026</span></div><a href="#" class="blog-ttl" onclick="event.preventDefault()">Getting Started with Docker for Developers</a><p class="blog-ex">A beginner-friendly guide to containerizing your applications with Docker and DevOps workflows.</p></div>
+        </div>
+        <div class="blog-card reveal" onclick="goBlogDetail(1)" style="cursor:pointer">
+          <div class="blog-img">
+            <!-- ── IMAGE NAME: blog-thumb-1 ── <img src="blog-thumb-1.jpg" alt="REST API"> -->
+            <img src="./images/Blog header image for _Building REST APIs with Node.js and Express_ - featuring Node.js logo, Express framework elements, API endpoints visualization, REST architecture diagram, code snippets, green and black color.jpg" alt="REST API" loading="lazy">
+          </div>
+          <div class="blog-info"><div class="blog-meta"><span><i class="fas fa-user"></i> by Tarek</span><span><i class="fas fa-calendar"></i> Mar 5, 2026</span></div><a href="#" class="blog-ttl" onclick="event.preventDefault()">Building REST APIs with Node.js and Express</a><p class="blog-ex">Step-by-step tutorial on creating clean, well-structured, and documented REST APIs.</p></div>
+        </div>
+        <div class="blog-card reveal" onclick="goBlogDetail(2)" style="cursor:pointer">
+          <div class="blog-img">
+            <!-- ── IMAGE NAME: blog-thumb-2 ── <img src="blog-thumb-2.jpg" alt="Linux"> -->
+            <img src="./images/Blog header image for _Linux Essentials Every Developer Should Know_ - featuring Linux penguin Tux mascot, terminal command line interface, bash shell commands, file system structure, developer workspace, black and.jpg" alt="Linux" loading="lazy">
+          </div>
+          <div class="blog-info"><div class="blog-meta"><span><i class="fas fa-user"></i> by Tarek</span><span><i class="fas fa-calendar"></i> Feb 18, 2026</span></div><a href="#" class="blog-ttl" onclick="event.preventDefault()">Linux Essentials Every Developer Should Know</a><p class="blog-ex">The most important Linux commands and concepts every modern developer needs daily.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT (Home) -->
+    <div id="contact-section" class="section alt">
+      <div class="reveal" style="text-align:center">
+        <span class="sec-label sec-label-center">CONTACT</span>
+        <h2 class="sec-title sec-title-center">Get In Touch With Me</h2>
+      </div>
+      <div class="reveal" style="max-width:700px;margin:1.5rem auto 0">
+        <div class="f-row" style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem">
+          <div class="fg"><label>Your Name</label><input type="text" placeholder="Altarek Attallah"/></div>
+          <div class="fg"><label>Your Email</label><input type="email" placeholder="tarekattallah00@gmail.com"/></div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" placeholder="Project discussion..."/></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Tell me about your project..."></textarea></div>
+        <button class="btn-sub" style="border-radius:30px"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-stay">Stay Connected</div>
+      <div class="footer-socials">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <!-- <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a> -->
+        <a href="https://github.com/Tarekattallah" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/201061258009" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/tarekattallah" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://snapchat.com/add/tarek13122000" target="_blank" title="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+      </div>
+    </footer>
+  </div><!-- end home page -->
+
+  <!-- ══════════ BLOG PAGE ══════════ -->
+  <div id="blog-page" class="page">
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-content"><h1>Blog</h1><div class="page-hero-breadcrumb">Home &gt; <span>Blog</span></div></div>
+    </div>
+    <button class="back-btn" onclick="goPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+    <div class="blog-page-wrap">
+      <div class="blog-page-list">
+        <div class="blog-page-card" onclick="goBlogDetail(0)">
+          <div class="blog-page-img">
+            <!-- ── IMAGE NAME: blog-page-img-0 ── <img src="blog-page-img-0.jpg" alt="Docker"> -->
+            <img src="./images/Blog header image for _Getting Started with Docker for Developers_ - featuring Docker containers, whale logo, developer workspace with code, modern tech aesthetic, blue and white color scheme, professional and clea.jpg" alt="Docker" loading="lazy">
+          </div>
+          <div class="blog-page-info">
+            <div class="blog-page-meta"><span><i class="fas fa-tag"></i> DevOps</span><span><i class="fas fa-calendar"></i> Apr 10, 2026</span></div>
+            <div class="blog-page-ttl">Getting Started with Docker for Developers</div>
+            <div class="blog-page-ex">A beginner-friendly guide to containerizing your applications with Docker and DevOps workflows.</div>
+            <button class="btn-learn">LEARN MORE</button>
+          </div>
+        </div>
+        <div class="blog-page-card" onclick="goBlogDetail(1)">
+          <div class="blog-page-img">
+            <!-- ── IMAGE NAME: blog-page-img-1 ── <img src="blog-page-img-1.jpg" alt="REST API"> -->
+            <img src="./images/Blog header image for _Building REST APIs with Node.js and Express_ - featuring Node.js logo, Express framework elements, API endpoints visualization, REST architecture diagram, code snippets, green and black color.jpg" alt="REST API" loading="lazy">
+          </div>
+          <div class="blog-page-info">
+            <div class="blog-page-meta"><span><i class="fas fa-tag"></i> Backend</span><span><i class="fas fa-calendar"></i> Mar 5, 2026</span></div>
+            <div class="blog-page-ttl">Building REST APIs with Node.js and Express</div>
+            <div class="blog-page-ex">Step-by-step tutorial on creating clean, well-structured, and documented REST APIs.</div>
+            <button class="btn-learn">LEARN MORE</button>
+          </div>
+        </div>
+        <div class="blog-page-card" onclick="goBlogDetail(2)">
+          <div class="blog-page-img">
+            <!-- ── IMAGE NAME: blog-page-img-2 ── <img src="blog-page-img-2.jpg" alt="Linux"> -->
+            <img src="./images/Blog header image for _Linux Essentials Every Developer Should Know_ - featuring Linux penguin Tux mascot, terminal command line interface, bash shell commands, file system structure, developer workspace, black and.jpg" alt="Linux" loading="lazy">
+          </div>
+          <div class="blog-page-info">
+            <div class="blog-page-meta"><span><i class="fas fa-tag"></i> Linux</span><span><i class="fas fa-calendar"></i> Feb 18, 2026</span></div>
+            <div class="blog-page-ttl">Linux Essentials Every Developer Should Know</div>
+            <div class="blog-page-ex">The most important Linux commands and concepts every modern developer needs daily.</div>
+            <button class="btn-learn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="blog-sidebar">
+        <div class="blog-search"><input type="text" placeholder="Search..."/><button><i class="fas fa-search"></i></button></div>
+        <div class="blog-sidebar-title">Categories</div>
+        <ul class="blog-cat-list">
+          <li>All <span>3</span></li>
+          <li>DevOps <span>1</span></li>
+          <li>Backend <span>1</span></li>
+          <li>Linux <span>1</span></li>
+        </ul>
+        <div class="blog-sidebar-title">Latest Articles</div>
+        <div class="blog-latest-list">
+          <div class="blog-latest-item" onclick="goBlogDetail(0)"><div class="blog-latest-img"><i class="fas fa-docker" style="font-family:sans-serif">🐳</i></div><div class="blog-latest-info"><div class="blog-latest-date"><i class="fas fa-calendar"></i> Apr 10, 2026</div><div class="blog-latest-ttl">Getting Started with Docker for Developers</div></div></div>
+          <div class="blog-latest-item" onclick="goBlogDetail(1)"><div class="blog-latest-img"><i class="fas fa-code"></i></div><div class="blog-latest-info"><div class="blog-latest-date"><i class="fas fa-calendar"></i> Mar 5, 2026</div><div class="blog-latest-ttl">Building REST APIs with Node.js and Express</div></div></div>
+          <div class="blog-latest-item" onclick="goBlogDetail(2)"><div class="blog-latest-img"><i class="fas fa-terminal"></i></div><div class="blog-latest-info"><div class="blog-latest-date"><i class="fas fa-calendar"></i> Feb 18, 2026</div><div class="blog-latest-ttl">Linux Essentials Every Developer Should Know</div></div></div>
+        </div>
+      </div>
+    </div>
+    <footer><div class="footer-stay">Stay Connected</div><div class="footer-socials"><a href="#"><a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/Tarekattallah" target="_blank"><i class="fab fa-github"></i></a><a href="https://wa.me/201061258009" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://t.me/tarekattallah" target="_blank"><i class="fab fa-telegram-plane"></i></a></div></footer>
+  </div>
+
+  <!-- ══════════ BLOG DETAIL PAGE ══════════ -->
+  <div id="blog-detail-page" class="page">
+    <div class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-content"><h1>Blog Details</h1><div class="page-hero-breadcrumb">Home &gt; <span>Blog Details</span></div></div></div>
+    <button class="back-btn" onclick="goPage('blog-page')"><i class="fas fa-arrow-left"></i> Back to Blog</button>
+    <div class="blog-detail-wrap">
+      <div>
+        <div class="blog-detail-img" id="blog-detail-img"><i class="fas fa-users"></i></div>
+        <div class="blog-detail-meta"><span id="blog-detail-cat"><i class="fas fa-tag"></i> DevOps</span><span id="blog-detail-date"><i class="fas fa-calendar"></i> Apr 10, 2026</span></div>
+        <h2 class="blog-detail-title" id="blog-detail-title">Getting Started with Docker for Developers</h2>
+        <p class="blog-detail-body" id="blog-detail-body"></p>
+        <div class="blog-share"><span>Share</span><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+      </div>
+      <div class="blog-sidebar">
+        <div class="blog-search"><input type="text" placeholder="Search..."/><button><i class="fas fa-search"></i></button></div>
+        <div class="blog-sidebar-title">Categories</div>
+        <ul class="blog-cat-list"><li>All <span>3</span></li><li>DevOps <span>1</span></li><li>Backend <span>1</span></li><li>Linux <span>1</span></li></ul>
+        <div class="blog-sidebar-title">Latest Articles</div>
+        <div class="blog-latest-list">
+          <div class="blog-latest-item" onclick="goBlogDetail(0)"><div class="blog-latest-img"><i class="fas fa-server"></i></div><div class="blog-latest-info"><div class="blog-latest-date"><i class="fas fa-calendar"></i> Apr 10, 2026</div><div class="blog-latest-ttl">Getting Started with Docker for Developers</div></div></div>
+          <div class="blog-latest-item" onclick="goBlogDetail(1)"><div class="blog-latest-img"><i class="fas fa-code"></i></div><div class="blog-latest-info"><div class="blog-latest-date"><i class="fas fa-calendar"></i> Mar 5, 2026</div><div class="blog-latest-ttl">Building REST APIs with Node.js and Express</div></div></div>
+          <div class="blog-latest-item" onclick="goBlogDetail(2)"><div class="blog-latest-img"><i class="fas fa-terminal"></i></div><div class="blog-latest-info"><div class="blog-latest-date"><i class="fas fa-calendar"></i> Feb 18, 2026</div><div class="blog-latest-ttl">Linux Essentials Every Developer Should Know</div></div></div>
+        </div>
+      </div>
+    </div>
+    <footer><div class="footer-stay">Stay Connected</div><div class="footer-socials"><a href="#"><a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/Tarekattallah" target="_blank"><i class="fab fa-github"></i></a><a href="https://wa.me/201061258009" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://t.me/tarekattallah" target="_blank"><i class="fab fa-telegram-plane"></i></a></div></footer>
+  </div>
+
+  <!-- ══════════ CONTACT PAGE ══════════ -->
+  <div id="contact-page" class="page">
+    <div class="contact-full-wrap">
+      <canvas class="contact-canvas-bg" id="contactNetCanvas"></canvas>
+      <div class="contact-inner">
+        <!-- Photo + Info side -->
+        <div class="contact-photo-side">
+          <div class="contact-photo-frame">
+            <!-- ── IMAGE NAME: contact-person-photo ── Replace icon with: <img src="YOUR_PHOTO.jpg" alt="Tarek"> -->
+            <img src="./images/Gemini_Generated_Image_3cu7ag3cu7ag3cu7.png" alt="Tarek Attallah" style="width:100%;height:100%;object-fit:cover">
+            <div class="contact-photo-glow"></div>
+          </div>
+          <div class="contact-info-chips">
+            <div class="contact-chip"><i class="fas fa-map-marker-alt"></i> Egypt, Cairo</div>
+            <div class="contact-chip"><i class="fas fa-envelope"></i> tarekattallah00@gmail.com</div>
+            <div class="contact-chip"><i class="fab fa-github"></i> github.com/tarekattallah</div>
+            <div class="contact-chip"><i class="fab fa-linkedin-in"></i> https://www.linkedin.com/in/tarekattallah/?skipRedirect=true</div>
+            <div class="contact-chip"><i class="fas fa-circle" style="color:#22c55e;font-size:.5rem"></i> Available for Hire</div>
+          </div>
+        </div>
+        <!-- Form side -->
+        <div class="contact-form-side">
+          <div style="margin-bottom:1rem">
+            <button class="back-btn" onclick="goPage('home')" style="margin:0 0 1.2rem 0;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)"><i class="fas fa-arrow-left"></i> Back</button>
+          </div>
+          <div class="contact-form-title">Get In Touch</div>
+          <div class="contact-form-sub">Have a project in mind? Let's talk about it.</div>
+          <div class="contact-row">
+            <div class="contact-field"><label>Name</label><input type="text" placeholder="Your Name"/></div>
+            <div class="contact-field"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+          </div>
+          <div class="contact-field"><label>Subject</label><input type="text" placeholder="Project discussion..."/></div>
+          <div class="contact-field"><label>Message</label><textarea placeholder="Tell me about your project..."></textarea></div>
+          <button class="btn-contact-send"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ SERVICES PAGE ══════════ -->
+  <div id="services-page" class="page">
+    <div class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-content"><h1>My Services</h1><div class="page-hero-breadcrumb">Home &gt; <span>Services</span></div></div></div>
+    <button class="back-btn" onclick="goPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+    <div style="position:relative;background:#f8f9ff;padding:2.5rem 3rem;min-height:400px">
+      <svg style="position:absolute;left:0;top:0;height:100%;width:80px;overflow:visible" viewBox="0 0 80 800" preserveAspectRatio="none">
+        <path d="M60 0 Q20 100 60 200 Q100 300 40 400 Q0 500 60 600 Q100 700 50 800" stroke="#e05a3a" stroke-width="2" fill="none" opacity="0.5"/>
+      </svg>
+      <svg style="position:absolute;right:0;top:0;height:100%;width:80px;overflow:visible" viewBox="0 0 80 800" preserveAspectRatio="none">
+        <path d="M20 0 Q60 100 20 200 Q-20 300 40 400 Q80 500 20 600 Q-20 700 30 800" stroke="#e05a3a" stroke-width="2" fill="none" opacity="0.5"/>
+      </svg>
+      <div class="srv-page-grid">
+        <div class="srv-page-card" onclick="goServiceDetail(0)"><div class="srv-page-img"><i class="fas fa-laptop-code"></i></div><div class="srv-page-name">Web Development</div><div class="srv-page-arrow">→</div></div>
+        <div class="srv-page-card" onclick="goServiceDetail(1)"><div class="srv-page-img"><i class="fas fa-plug"></i></div><div class="srv-page-name">Building REST APIs</div><div class="srv-page-arrow">→</div></div>
+        <div class="srv-page-card" onclick="goServiceDetail(2)"><div class="srv-page-img"><i class="fas fa-mobile-alt"></i></div><div class="srv-page-name">Responsive Design</div><div class="srv-page-arrow">→</div></div>
+        <div class="srv-page-card" onclick="goServiceDetail(3)"><div class="srv-page-img"><i class="fas fa-bug"></i></div><div class="srv-page-name">Fixing Bugs & Optimization</div><div class="srv-page-arrow">→</div></div>
+        <div class="srv-page-card" onclick="goServiceDetail(4)"><div class="srv-page-img"><i class="fas fa-cloud-upload-alt"></i></div><div class="srv-page-name">Deploying Applications</div><div class="srv-page-arrow">→</div></div>
+        <div class="srv-page-card" onclick="goServiceDetail(5)"><div class="srv-page-img"><i class="fab fa-git-alt"></i></div><div class="srv-page-name">Version Control Setup</div><div class="srv-page-arrow">→</div></div>
+      </div>
+    </div>
+    <footer><div class="footer-stay">Stay Connected</div><div class="footer-socials"><a href="#"><a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/Tarekattallah" target="_blank"><i class="fab fa-github"></i></a><a href="https://wa.me/201061258009" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://t.me/tarekattallah" target="_blank"><i class="fab fa-telegram-plane"></i></a></div></footer>
+  </div>
+
+  <!-- ══════════ SERVICE DETAIL PAGE ══════════ -->
+  <div id="service-detail-page" class="page">
+    <div class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-content"><h1>Service Details</h1><div class="page-hero-breadcrumb">Home &gt; <span>Service Details</span></div></div></div>
+    <button class="back-btn" onclick="goPage('services-page')"><i class="fas fa-arrow-left"></i> Back to Services</button>
+    <div class="srv-detail-wrap">
+      <div class="srv-detail-img" id="srv-detail-img">
+        <!-- ── IMAGE NAME: srv-detail-0 … srv-detail-5 ── Set dynamically per service -->
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <h2 class="srv-detail-title" id="srv-detail-title">Web Development</h2>
+      <p class="srv-detail-body" id="srv-detail-body"></p>
+      <div class="srv-share"><span>Share</span><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+    </div>
+    <footer><div class="footer-stay">Stay Connected</div><div class="footer-socials"><a href="#"><a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/Tarekattallah" target="_blank"><i class="fab fa-github"></i></a><a href="https://wa.me/201061258009" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://t.me/tarekattallah" target="_blank"><i class="fab fa-telegram-plane"></i></a></div></footer>
+  </div>
+
+  <!-- ══════════ PORTFOLIOS PAGE ══════════ -->
+  <div id="portfolios-page" class="page">
+    <div class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-content"><h1>My Projects</h1><div class="page-hero-breadcrumb">Home &gt; <span>Projects</span></div></div></div>
+    <button class="back-btn" onclick="goPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+    <div class="section">
+      <div class="port-page-filter">
+        <button class="f-btn active" data-filter2="all">All</button>
+        <button class="f-btn" data-filter2="web">Web Development</button>
+        <button class="f-btn" data-filter2="api">API</button>
+        <button class="f-btn" data-filter2="misc">MISC</button>
+      </div>
+      <div class="port-page-grid">
+        <div class="port-page-card" data-cat2="web" onclick="goPortDetail(0)">
+          <div class="port-page-img">
+            <!-- ── IMAGE NAME: port-page-thumb-0 ── <img src="port-page-thumb-0.jpg" alt="MediBook"> -->
+            <img src="./images/MediBook Medical Booking System illustration featuring healthcare appointment scheduling, doctor booking interface, medical calendar, patient management, hospital system, healthcare app, medical appointments, digit.jpg" alt="MediBook" loading="lazy">
+          </div>
+          <div class="port-page-overlay"><div class="port-page-ov-name">MediBook – Medical Booking System</div><div class="port-page-ov-cat">Web Development</div><div class="port-page-ov-arrow">→ View Project</div></div>
+        </div>
+        <div class="port-page-card" data-cat2="web" onclick="goPortDetail(1)">
+          <div class="port-page-img">
+            <!-- ── IMAGE NAME: port-page-thumb-1 ── <img src="port-page-thumb-1.jpg" alt="Portfolio"> -->
+            <img src="./images/Personal Portfolio Website illustration featuring web developer portfolio, creative portfolio design, website mockup, personal brand showcase, skills section, projects gallery, about me page, contact form, responsi.jpg" alt="Portfolio" loading="lazy">
+          </div>
+          <div class="port-page-overlay"><div class="port-page-ov-name">Personal Portfolio Website</div><div class="port-page-ov-cat">Web Development</div><div class="port-page-ov-arrow">→ View Project</div></div>
+        </div>
+        <div class="port-page-card" data-cat2="web" onclick="goPortDetail(2)">
+          <div class="port-page-img">
+            <!-- ── IMAGE NAME: port-page-thumb-2 ── <img src="port-page-thumb-2.jpg" alt="Task Manager"> -->
+            <img src="./images/Task Manager App with CRUD operations illustration featuring to-do list interface, create read update delete functions, task management dashboard, productivity app, checklist interface, task organization system, mo.jpg" alt="Task Manager" loading="lazy">
+          </div>
+          <div class="port-page-overlay"><div class="port-page-ov-name">Task Manager App (CRUD)</div><div class="port-page-ov-cat">Web Development</div><div class="port-page-ov-arrow">→ View Project</div></div>
+        </div>
+        <div class="port-page-card" data-cat2="api" onclick="goPortDetail(3)">
+          <div class="port-page-img">
+            <!-- ── IMAGE NAME: port-page-thumb-3 ── <img src="port-page-thumb-3.jpg" alt="REST API"> -->
+            <img src="./images/REST API Project illustration featuring RESTful API architecture, HTTP methods GET POST PUT DELETE, API endpoints, JSON data exchange, API documentation, server client communication, API integration, web services, .jpg" alt="REST API" loading="lazy">
+          </div>
+          <div class="port-page-overlay"><div class="port-page-ov-name">REST API Project</div><div class="port-page-ov-cat">API</div><div class="port-page-ov-arrow">→ View Project</div></div>
+        </div>
+        <div class="port-page-card" data-cat2="misc" onclick="goPortDetail(4)">
+          <div class="port-page-img">
+            <!-- ── IMAGE NAME: port-page-thumb-4 ── <img src="port-page-thumb-4.jpg" alt="Game"> -->
+            <img src="./images/Scratch programming game interface from CS50 project, showing colorful block-based coding environment with sprite characters, stage area with game elements, code blocks on the left side, and a playful educational g.jpg" alt="Game" loading="lazy">
+          </div>
+          <div class="port-page-overlay"><div class="port-page-ov-name">Scratch Game (CS50 Project)</div><div class="port-page-ov-cat">MISC</div><div class="port-page-ov-arrow">→ View Project</div></div>
+        </div>
+      </div>
+    </div>
+    <footer><div class="footer-stay">Stay Connected</div><div class="footer-socials"><a href="#"><a href="https://www.linkedin.com/in/tarekattallah/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/Tarekattallah" target="_blank"><i class="fab fa-github"></i></a><a href="https://wa.me/201061258009" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://t.me/tarekattallah" target="_blank"><i class="fab fa-telegram-plane"></i></a></div></footer>
+  </div>
+
+  <!-- ══════════ PORTFOLIO DETAIL PAGE ══════════ -->
+  <div id="portfolio-detail-page" class="page">
+    <div class="page-hero"><div class="page-hero-bg"></div><div class="page-hero-content"><h1>Projects Details</h1><div class="page-hero-breadcrumb">Home &gt; <span>Portfolio Details</span></div></div></div>
+    <button class="back-btn" onclick="goPage('portfolios-page')"><i class="fas fa-arrow-left"></i> Back to Projects</button>
+    <div class="port-detail-wrap">
+      <div>
+        <div class="port-detail-slider">
+          <div class="port-detail-slides" id="port-slides">
+            <div class="port-detail-slide" id="port-slide-main"><i class="fas fa-laptop-code"></i></div>
+          </div>
+          <button class="port-slider-btn port-slider-prev" onclick="portSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="port-slider-btn port-slider-next" onclick="portSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <h2 class="port-detail-title" id="port-detail-title">Project Name</h2>
+        <p class="port-detail-desc" id="port-detail-desc">Project description.</p>
+        <div class="port-detail-share" id="port-share-bar">
+          <span>Share</span>
+          <a href="#" id="share-fb" title="Share on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" id="share-tw" title="Share on Twitter/X" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" id="share-li" title="Share on LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" id="share-wa" title="Share on WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" id="share-copy" title="Copy link"><i class="fas fa-link"></i></a>
+          <span id="share-copied" style="font-size:.72rem;color:#22c55e;opacity:0;transition:opacity .3s;margin-left:.25rem">Copied!</span>
+        </div>
+      </div>
+      <div class="port-detail-meta">
+        <div class="port-meta-row"><div class="port-meta-label">Category</div><div class="port-meta-val" id="port-meta-cat">Web Development</div></div>
+        <div class="port-meta-row"><div class="port-meta-label">Client</div><div class="port-meta-val" id="port-meta-client">—</div></div>
+        <div class="port-meta-row"><div class="port-meta-label">Start Date</div><div class="port-meta-val" id="port-meta-start">—</div></div>
+        <div class="port-meta-row"><div class="port-meta-label">End Date</div><div class="port-meta-val" id="port-meta-end">—</div></div>
+        <div class="port-meta-row"><div class="port-meta-label">Link</div><div class="port-meta-val" id="port-meta-link"><a href="#">—</a></div></div>
+      </div>
+    </div>
+    <footer><div class="footer-stay">Stay Connected</div><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="https://linkedin.com/in/tarek-attallah" target="_blank"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/tarek-attallah" target="_blank"><i class="fab fa-github"></i></a><a href="https://wa.me/20XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a></div></footer>
+  </div>
+
+</main>
+
+<button id="back-top" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="js/main.js"></script>
+<script src="js/canvas.js"></script>
+</body>
+</html>
