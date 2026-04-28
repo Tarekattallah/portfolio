@@ -1,4 +1,4 @@
-// ═══ MOBILE MENU ═══
+﻿// ═══ MOBILE MENU ═══
 function toggleMenu(){
   document.getElementById('sidebar').classList.toggle('open');
 }
@@ -40,7 +40,7 @@ const projects = [
     link:'#',desc:'A responsive personal portfolio built with pure HTML, CSS, and JavaScript. Features animated hero background, typed text effect, skill bars, timeline resume, and portfolio filter.',
     // ── IMAGE NAMES: port-slide-1-0, port-slide-1-1, port-slide-1-2 ──
     slides:[
-      '../images/Screenshot 2026-04-28 171929.png',
+      '../images/img-9.png',
       '../images/Blog header image for _Personal Portfolio Website_ - featuring modern portfolio website design, laptop displaying portfolio layout, developer workspace, code editor, design mockups, personal branding elements,  (1).jpg',
       '../images/Blog header image for _Personal Portfolio Website_ - featuring modern portfolio website design, laptop displaying portfolio layout, developer workspace, code editor, design mockups, personal branding elements, resu.jpg'
     ]
@@ -62,9 +62,9 @@ const projects = [
     desc:'A clean RESTful API built with Node.js and Express. Implements JWT authentication, role-based access control, input validation, error handling, and follows REST best practices.',
     // ── IMAGE NAMES: port-slide-3-0, port-slide-3-1, port-slide-3-2 ──
     slides:[
-      '../images/Back-end development illustration featuring Node.js and APIs, showing server architecture, code snippets, API endpoints, database connections, Node.js logo, RESTful services, and technical programming elements.jpg',
-      '../images/Back-end development illustration featuring Node.js and APIs, showing server architecture, code snippets, API endpoints, database connections, Node.js logo, RESTful services, and technical programming elements (2).jpg',
-      '../images/Back-end development illustration featuring Node.js and APIs, showing server architecture, code snippets, API endpoints, database connections, Node.js logo, RESTful services, and technical programming elements (3).jpg'
+      '../images/img-4.jpg',
+      '../images/img-2.jpg',
+      '../images/img-3.jpg'
     ]
   },
   {
@@ -262,3 +262,4 @@ bt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
 // ═══ RESUME DOWNLOAD ═══
 document.querySelectorAll('#dlResume1,#dlResume2').forEach(b=>{b.addEventListener('click',e=>{e.preventDefault();alert('ضع ملف الـ CV واستبدل href بمسار الملف.');})});
+
