@@ -12,7 +12,7 @@
 
 <br/>
 
-[Portfolio Preview]((https://tarekattallah.github.io/portfolio/))
+[Portfolio Preview]([(https://tarekattallah.github.io/portfolio/)](https://github.com/Tarekattallah/portfolio))
 
 </div>
 
