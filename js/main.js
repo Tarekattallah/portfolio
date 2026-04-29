@@ -30,9 +30,9 @@ const projects = [
     desc:'A full-stack medical appointment booking system built with React.js, Node.js, Express, and MongoDB. Features doctor listings, patient registration, appointment scheduling, and an admin dashboard.',
     // ── IMAGE NAMES: port-slide-0-0, port-slide-0-1, port-slide-0-2 ──
     slides:[
-      '../images/img-10.jpg',
-      '../images/img-11.jpg',
-      '../images/img-9.jpg'
+      'images/img-10.jpg',
+      'images/img-11.jpg',
+      'images/img-9.jpg'
     ]
   },
   {
@@ -40,9 +40,9 @@ const projects = [
     link:'#',desc:'A responsive personal portfolio built with pure HTML, CSS, and JavaScript. Features animated hero background, typed text effect, skill bars, timeline resume, and portfolio filter.',
     // ── IMAGE NAMES: port-slide-1-0, port-slide-1-1, port-slide-1-2 ──
     slides:[
-      '../images/img-9.png',
-      '../images/img-13.jpg',
-      '../images/img-12.jpg'
+      'images/img-9.png',
+      'images/img-13.jpg',
+      'images/img-12.jpg'
     ]
   },
   {
@@ -51,9 +51,9 @@ const projects = [
     desc:'A CRUD task management application with user authentication, priority levels, due dates, and status tracking. Built with Node.js, Express, MongoDB, and vanilla JS frontend.',
     // ── IMAGE NAMES: port-slide-2-0, port-slide-2-1, port-slide-2-2 ──
     slides:[
-      '../images/img-16.jpg',
-      '../images/img-14.jpg',
-      '../images/img-15.jpg'
+      'images/img-16.jpg',
+      'images/img-14.jpg',
+      'images/img-15.jpg'
     ]
   },
   {
@@ -62,9 +62,9 @@ const projects = [
     desc:'A clean RESTful API built with Node.js and Express. Implements JWT authentication, role-based access control, input validation, error handling, and follows REST best practices.',
     // ── IMAGE NAMES: port-slide-3-0, port-slide-3-1, port-slide-3-2 ──
     slides:[
-      '../images/img-4.jpg',
-      '../images/img-2.jpg',
-      '../images/img-3.jpg'
+      'images/img-4.jpg',
+      'images/img-2.jpg',
+      'images/img-3.jpg'
     ]
   },
   {
@@ -73,9 +73,9 @@ const projects = [
     desc:'An interactive game built as part of the CS50 Introduction to Computer Science course. Demonstrates core programming concepts using Scratch visual programming language.',
     // ── IMAGE NAMES: port-slide-4-0, port-slide-4-1, port-slide-4-2 ──
     slides:[
-      '../images/img-28.jpg',
-      '../images/img-20.jpg',
-      '../images/img-19.jpg'
+      'images/img-28.jpg',
+      'images/img-20.jpg',
+      'images/img-19.jpg'
     ]
   }
 ];
