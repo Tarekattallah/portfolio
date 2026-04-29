@@ -30,9 +30,9 @@ const projects = [
     desc:'A full-stack medical appointment booking system built with React.js, Node.js, Express, and MongoDB. Features doctor listings, patient registration, appointment scheduling, and an admin dashboard.',
     // ── IMAGE NAMES: port-slide-0-0, port-slide-0-1, port-slide-0-2 ──
     slides:[
-      '../images/Blog header image for _MediBook – Medical Booking System_ - featuring medical appointment scheduling interface, calendar with medical appointments, doctor and patient icons, healthcare app design, stethoscope,  (1).jpg',
-      '../images/Blog header image for _MediBook – Medical Booking System_ - featuring medical appointment scheduling interface, calendar with medical appointments, doctor and patient icons, healthcare app design, stethoscope,  (2).jpg',
-      '../images/Blog header image for _MediBook – Medical Booking System_ - featuring medical appointment scheduling interface, calendar with medical appointments, doctor and patient icons, healthcare app design, stethoscope, medi.jpg'
+      '../images/img-10.jpg',
+      '../images/img-11.jpg',
+      '../images/img-9.jpg'
     ]
   },
   {
@@ -41,8 +41,8 @@ const projects = [
     // ── IMAGE NAMES: port-slide-1-0, port-slide-1-1, port-slide-1-2 ──
     slides:[
       '../images/img-9.png',
-      '../images/Blog header image for _Personal Portfolio Website_ - featuring modern portfolio website design, laptop displaying portfolio layout, developer workspace, code editor, design mockups, personal branding elements,  (1).jpg',
-      '../images/Blog header image for _Personal Portfolio Website_ - featuring modern portfolio website design, laptop displaying portfolio layout, developer workspace, code editor, design mockups, personal branding elements, resu.jpg'
+      '../images/img-13.jpg',
+      '../images/img-12.jpg'
     ]
   },
   {
@@ -51,9 +51,9 @@ const projects = [
     desc:'A CRUD task management application with user authentication, priority levels, due dates, and status tracking. Built with Node.js, Express, MongoDB, and vanilla JS frontend.',
     // ── IMAGE NAMES: port-slide-2-0, port-slide-2-1, port-slide-2-2 ──
     slides:[
-      '../images/Blog header image for _Task Manager App (CRUD)_ - featuring task management interface, to-do list with checkboxes, CRUD operations icons (create, read, update, delete), productivity dashboard, task cards, check (1).jpg',
-      '../images/Blog header image for _Task Manager App (CRUD)_ - featuring task management interface, to-do list with checkboxes, CRUD operations icons (create, read, update, delete), productivity dashboard, task cards, check (2).jpg',
-      '../images/Blog header image for _Task Manager App (CRUD)_ - featuring task management interface, to-do list with checkboxes, CRUD operations icons (create, read, update, delete), productivity dashboard, task cards, checklist.jpg'
+      '../images/img-16.jpg',
+      '../images/img-14.jpg',
+      '../images/img-15.jpg'
     ]
   },
   {
@@ -73,9 +73,9 @@ const projects = [
     desc:'An interactive game built as part of the CS50 Introduction to Computer Science course. Demonstrates core programming concepts using Scratch visual programming language.',
     // ── IMAGE NAMES: port-slide-4-0, port-slide-4-1, port-slide-4-2 ──
     slides:[
-      '../images/Scratch programming game interface from CS50 project, showing colorful block-based coding environment with sprite characters, stage area with game elements, code blocks on the left side, and a playful education (1).jpg',
-      '../images/Scratch programming game interface from CS50 project, showing colorful block-based coding environment with sprite characters, stage area with game elements, code blocks on the left side, and a playful educational g.jpg',
-      '../images/Scratch programming game interface from CS50 project, showing colorful block-based coding environment with sprite characters, stage area with game elements, code blocks on the left side, and a playful education (3).jpg'
+      '../images/img-28.jpg',
+      '../images/img-20.jpg',
+      '../images/img-19.jpg'
     ]
   }
 ];
@@ -143,7 +143,7 @@ function goPortDetail(idx){
   const shareUrl = p.link && p.link !== '#' ? p.link : window.location.href;
   const shareTitle = encodeURIComponent(p.name);
   const shareText = encodeURIComponent(p.name + ' – ' + p.desc.slice(0,80) + '…');
-  document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+  // document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
   document.getElementById('share-tw').href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${shareTitle}`;
   document.getElementById('share-li').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
   document.getElementById('share-wa').href = `https://wa.me/?text=${shareTitle}%20${encodeURIComponent(shareUrl)}`;

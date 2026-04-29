@@ -2,7 +2,7 @@
 (function(){
   const cv=document.getElementById('contactNetCanvas');
   if(!cv)return;
-  const cx=cv.getContext('2d');
+const cx = cv.getContext('2d');
   let W,H,dots=[];
   const N=260,DIST=130;
   function resize(){W=cv.width=cv.offsetWidth||window.innerWidth;H=cv.height=cv.offsetHeight||window.innerHeight;}
